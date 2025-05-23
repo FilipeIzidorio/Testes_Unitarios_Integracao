@@ -1,7 +1,7 @@
 module.exports = {
     preset: 'ts-jest',
     testEnvironment: 'node',
-    testMatch: ['**/tests/**/*.test.ts'],
+    testMatch: ['**/tests/**/*.test.ts'],   // Buscar os arquivos de testes
     collectCoverage: true,                  // Ativa a coleta de cobertura
     coverageProvider: "v8",                 // Motor do JS/Chrome/Node
     coverageDirectory: 'coverage',          // Pasta onde os relatórios serão gerados
@@ -11,7 +11,10 @@ module.exports = {
         '!src/index.ts',                      // Excluir arquivos não relevantes
         '!src/**/*.d.ts'                      // Excluir tipos TypeScript
     ],
+    
+    /*
     setupFiles: [
         "dotenv/config"
     ],
+    */
 };
